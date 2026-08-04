@@ -1,0 +1,98 @@
+// PartAlert — schema del database
+// Principio guida: conserviamo il minimo indispensabile.
+// Nessuna password, nessun profilo, nessun dato di pagamento.
+
+generator client { provider = "prisma-client-js" }
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+/// Un iscritto. L'indirizzo email è cifrato a riposo (AES-256-GCM);
+/// emailHash è un HMAC-SHA256 e serve solo per le ricerche di uguaglianza.
+model Subscriber {
+  id            String   @id @default(cuid())
+  emailHash     String   @unique          // HMAC(email) — indicizzabile, non reversibile
+  emailEnc      String                    // AES-256-GCM, formato iv:tag:ciphertext
+  confirmed     Boolean  @default(false)  // double opt-in obbligatorio
+  confirmToken  String?  @unique
+  unsubToken    String   @unique          // link di cancellazione in ogni email
+  locale        String   @default("it")
+  createdAt     DateTime @default(now())
+  lastNotified  DateTime?
+  alerts        Alert[]
+
+  @@index([confirmed])
+}
+
+/// Un avviso su un codice produttore.
+model Alert {
+  id            String   @id @default(cuid())
+  subscriberId  String
+  subscriber    Subscriber @relation(fields: [subscriberId], references: [id], onDelete: Cascade)
+  mpn           String
+  manufacturer  String?
+  /// Soglia di prezzo in centesimi di euro. null = avviso prezzo disattivo.
+  targetPriceC  Int?
+  /// true = avvisa quando un distributore torna ad avere giacenza.
+  watchStock    Boolean  @default(false)
+  active        Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  lastFiredAt   DateTime?
+  fireCount     Int      @default(0)
+
+  @@unique([subscriberId, mpn])
+  @@index([mpn, active])
+}
+
+/// Ultimo stato conosciuto di un codice, condiviso da tutti gli avvisi su quel codice.
+/// È il riferimento per rilevare le transizioni (non notifichiamo lo stato, ma il cambiamento).
+model PartState {
+  mpn           String   @id
+  bestPriceC    Int?     // miglior prezzo in centesimi tra i distributori con giacenza
+  bestSeller    String?
+  totalStock    Int      @default(0)
+  /// Mappa distributore -> giacenza dell'ultimo controllo, per rilevare i rientri.
+  stockByDist   Json     @default("{}")
+  checkedAt     DateTime @default(now())
+  failCount     Int      @default(0)
+
+  @@index([checkedAt])
+}
+
+/// Serie storica dei prezzi. Alimenta il grafico e la sezione "cali di oggi".
+model PriceSnapshot {
+  id        BigInt   @id @default(autoincrement())
+  mpn       String
+  seller    String
+  priceC    Int
+  stock     Int
+  takenAt   DateTime @default(now())
+
+  @@index([mpn, takenAt])
+}
+
+/// Click in uscita verso i distributori. Base del rendiconto delle commissioni.
+/// Nessun dato personale: non salviamo IP né user agent completo.
+model OutboundClick {
+  id        BigInt   @id @default(autoincrement())
+  mpn       String
+  seller    String
+  network   String?  // awin, impact, diretto...
+  clickRef  String   @unique   // identificativo passato al network per la riconciliazione
+  source    String?  // part, alert-email, listing
+  country   String?  // solo il paese, dedotto dall'edge
+  createdAt DateTime @default(now())
+
+  @@index([seller, createdAt])
+}
+
+/// Limite di frequenza per IP, memorizzato come hash: l'IP in chiaro non viene mai scritto.
+model RateLimit {
+  key       String   @id     // HMAC(ip + finestra)
+  hits      Int      @default(1)
+  expiresAt DateTime
+
+  @@index([expiresAt])
+}

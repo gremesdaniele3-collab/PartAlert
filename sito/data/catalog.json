@@ -1,0 +1,285 @@
+{
+"categories":[
+ {"k":"mcu","n":"Microcontrollori e MCU","s":"MCU, SoC e processori embedded","i":"qfp"},
+ {"k":"rf","n":"RF e wireless","s":"Moduli Wi-Fi, Bluetooth, LoRa e cellulari","i":"mod"},
+ {"k":"analog","n":"Circuiti integrati analogici","s":"Amplificatori operazionali, timer, comparatori","i":"dip"},
+ {"k":"disc","n":"Semiconduttori discreti","s":"MOSFET, transistor bipolari, diodi","i":"to220"},
+ {"k":"pwr","n":"Alimentazione","s":"Regolatori lineari, LDO, convertitori switching","i":"sot"},
+ {"k":"pass","n":"Componenti passivi","s":"Resistori, condensatori, induttori","i":"chip"},
+ {"k":"sens","n":"Sensori","s":"Temperatura, pressione, movimento, distanza","i":"mod"},
+ {"k":"opto","n":"Optoelettronica","s":"LED, fotoaccoppiatori, display","i":"led"},
+ {"k":"emech","n":"Elettromeccanica","s":"Relè, interruttori, connettori","i":"relay"}
+],
+"parts":[
+
+{"mpn":"STM32F103C8T6","mfr":"STMicroelectronics","cat":"mcu","pkg":"LQFP-48","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Microcontrollore ARM Cortex-M3 a 72 MHz con 64 KB di flash e 20 KB di SRAM",
+ "sp":{"Famiglia core":"ARM Cortex-M3","Frequenza massima":"72 MHz","Memoria flash":"64 KB","SRAM":"20 KB","Tensione di alimentazione":"2,0 – 3,6 V","I/O digitali":"37","Canali ADC":"10 canali, 12 bit","Timer":"3× 16 bit, 1× advanced","Interfacce":"2× I²C, 3× USART, 2× SPI, USB 2.0, CAN","DMA":"7 canali","Temperatura di esercizio":"−40 – 85 °C","Consumo in stop":"20 µA"},
+ "of":[["DigiKey",1.94,12430,1],["Mouser",2.01,8102,1],["LCSC",1.62,41200,0],["Farnell",2.34,0,1],["RS",2.58,190,1],["TME",2.11,1340,1]]},
+
+{"mpn":"STM32F411CEU6","mfr":"STMicroelectronics","cat":"mcu","pkg":"UFQFPN-48","life":"Attivo","rohs":1,"moq":1,"lead":"10 settimane",
+ "desc":"Microcontrollore Cortex-M4F a 100 MHz con FPU, 512 KB di flash e 128 KB di SRAM",
+ "sp":{"Famiglia core":"ARM Cortex-M4F","Frequenza massima":"100 MHz","Memoria flash":"512 KB","SRAM":"128 KB","Tensione di alimentazione":"1,7 – 3,6 V","I/O digitali":"36","Canali ADC":"16 canali, 12 bit","Timer":"8× 16 bit, 2× 32 bit","Interfacce":"3× I²C, 3× USART, 5× SPI, USB OTG","Unità in virgola mobile":"presente","Temperatura di esercizio":"−40 – 85 °C","Consumo in run":"100 µA/MHz"},
+ "of":[["DigiKey",4.28,3860,1],["Mouser",4.35,2740,1],["LCSC",3.11,9800,0],["Farnell",4.62,610,1],["RS",5.02,88,1],["TME",4.40,720,1]]},
+
+{"mpn":"ATMEGA328P-PU","mfr":"Microchip Technology","cat":"mcu","pkg":"PDIP-28","life":"Attivo","rohs":1,"moq":1,"lead":"12 settimane",
+ "desc":"Microcontrollore AVR a 8 bit da 20 MHz con 32 KB di flash, usato su Arduino Uno",
+ "sp":{"Famiglia core":"AVR 8 bit","Frequenza massima":"20 MHz","Memoria flash":"32 KB","SRAM":"2 KB","EEPROM":"1 KB","Tensione di alimentazione":"1,8 – 5,5 V","I/O digitali":"23","Canali ADC":"6 canali, 10 bit","Timer":"2× 8 bit, 1× 16 bit","Interfacce":"I²C, USART, SPI","Temperatura di esercizio":"−40 – 85 °C","Consumo in power-down":"0,1 µA"},
+ "of":[["DigiKey",2.41,3120,1],["Mouser",2.38,940,1],["LCSC",2.05,0,0],["Farnell",2.62,410,1],["RS",2.89,87,1],["TME",2.44,620,1]]},
+
+{"mpn":"ATTINY85-20PU","mfr":"Microchip Technology","cat":"mcu","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"14 settimane",
+ "desc":"Microcontrollore AVR a 8 bit in contenitore a 8 pin con 8 KB di flash",
+ "sp":{"Famiglia core":"AVR 8 bit","Frequenza massima":"20 MHz","Memoria flash":"8 KB","SRAM":"512 B","EEPROM":"512 B","Tensione di alimentazione":"2,7 – 5,5 V","I/O digitali":"6","Canali ADC":"4 canali, 10 bit","Timer":"2× 8 bit","Interfacce":"USI (I²C/SPI)","Temperatura di esercizio":"−40 – 85 °C","Consumo in power-down":"0,1 µA"},
+ "of":[["DigiKey",1.68,14200,1],["Mouser",1.72,9400,1],["LCSC",1.45,3200,0],["Farnell",1.84,2100,1],["RS",2.06,340,1],["TME",1.74,1800,1]]},
+
+{"mpn":"RP2040","mfr":"Raspberry Pi","cat":"mcu","pkg":"QFN-56","life":"Attivo","rohs":1,"moq":1,"lead":"4 settimane",
+ "desc":"Microcontrollore dual-core Cortex-M0+ a 133 MHz con 264 KB di SRAM e blocchi PIO programmabili",
+ "sp":{"Famiglia core":"2× ARM Cortex-M0+","Frequenza massima":"133 MHz","Memoria flash":"esterna QSPI fino a 16 MB","SRAM":"264 KB","Tensione di alimentazione":"1,8 – 3,3 V","I/O digitali":"30","Canali ADC":"4 canali, 12 bit","Timer":"1× 64 bit","Interfacce":"2× I²C, 2× UART, 2× SPI, USB 1.1","Blocchi PIO":"2 blocchi, 8 macchine a stati","Temperatura di esercizio":"−20 – 85 °C","Consumo in dormant":"180 µA"},
+ "of":[["DigiKey",0.94,86000,1],["Mouser",0.98,52000,1],["LCSC",0.81,140000,0],["Farnell",1.05,12400,1],["RS",1.12,3100,1],["TME",0.99,8600,1]]},
+
+{"mpn":"STM32G431CBT6","mfr":"STMicroelectronics","cat":"mcu","pkg":"LQFP-48","life":"Attivo","rohs":1,"moq":1,"lead":"16 settimane",
+ "desc":"Microcontrollore Cortex-M4F a 170 MHz con acceleratore CORDIC e ADC veloci per controllo motori",
+ "sp":{"Famiglia core":"ARM Cortex-M4F","Frequenza massima":"170 MHz","Memoria flash":"128 KB","SRAM":"32 KB","Tensione di alimentazione":"1,7 – 3,6 V","I/O digitali":"39","Canali ADC":"2× 12 bit, 4 Msps","Timer":"3× advanced per PWM motori","Interfacce":"3× I²C, 3× USART, 3× SPI, FDCAN","Acceleratori":"CORDIC, FMAC","Temperatura di esercizio":"−40 – 125 °C","Comparatori analogici":"4"},
+ "of":[["DigiKey",4.62,2140,1],["Mouser",4.71,1880,1],["LCSC",4.20,3900,0],["Farnell",4.98,0,1],["RS",5.34,64,1],["TME",4.80,410,1]]},
+
+{"mpn":"PIC16F877A-I/P","mfr":"Microchip Technology","cat":"mcu","pkg":"PDIP-40","life":"NRND","rohs":1,"moq":1,"lead":"20 settimane",
+ "desc":"Microcontrollore PIC a 8 bit da 20 MHz con 14 KB di flash, molto diffuso in didattica",
+ "sp":{"Famiglia core":"PIC 8 bit","Frequenza massima":"20 MHz","Memoria flash":"14 KB","SRAM":"368 B","EEPROM":"256 B","Tensione di alimentazione":"2,0 – 5,5 V","I/O digitali":"33","Canali ADC":"8 canali, 10 bit","Timer":"2× 8 bit, 1× 16 bit","Interfacce":"I²C, USART, SPI","Temperatura di esercizio":"−40 – 85 °C","Stato di fornitura":"non consigliato per nuovi progetti"},
+ "of":[["DigiKey",6.84,410,1],["Mouser",6.92,180,1],["LCSC",5.90,0,0],["Farnell",7.24,0,1],["RS",7.85,22,1],["TME",7.10,95,1]]},
+
+{"mpn":"MSP430G2553IN20","mfr":"Texas Instruments","cat":"mcu","pkg":"PDIP-20","life":"Attivo","rohs":1,"moq":1,"lead":"9 settimane",
+ "desc":"Microcontrollore a 16 bit a bassissimo consumo con 16 KB di flash",
+ "sp":{"Famiglia core":"MSP430 16 bit","Frequenza massima":"16 MHz","Memoria flash":"16 KB","SRAM":"512 B","Tensione di alimentazione":"1,8 – 3,6 V","I/O digitali":"16","Canali ADC":"8 canali, 10 bit","Timer":"2× 16 bit","Interfacce":"I²C, UART, SPI","Consumo attivo":"230 µA/MHz","Temperatura di esercizio":"−40 – 85 °C","Consumo in standby":"0,5 µA"},
+ "of":[["DigiKey",2.86,6400,1],["Mouser",2.91,4100,1],["LCSC",2.62,900,0],["Farnell",3.08,1200,1],["RS",3.44,210,1],["TME",2.95,540,1]]},
+
+{"mpn":"ESP32-WROOM-32E","mfr":"Espressif Systems","cat":"rf","pkg":"SMD-38","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Modulo Wi-Fi 802.11 b/g/n e Bluetooth LE con 4 MB di flash e antenna su PCB",
+ "sp":{"Interfacce radio":"Wi-Fi 2,4 GHz + Bluetooth LE","Core":"2× Xtensa LX6 a 240 MHz","Memoria flash":"4 MB","SRAM":"520 KB","Antenna":"stampata su PCB","Tensione di alimentazione":"3,0 – 3,6 V","Corrente di picco":"500 mA","Potenza di trasmissione":"+20 dBm","Sensibilità in ricezione":"−97 dBm","Certificazioni":"CE, FCC, IC","Temperatura di esercizio":"−40 – 85 °C","GPIO disponibili":"26"},
+ "of":[["DigiKey",3.12,0,1],["Mouser",3.24,1180,1],["LCSC",2.71,8900,0],["Farnell",3.48,64,1],["RS",3.95,0,1],["TME",3.05,520,1]]},
+
+{"mpn":"ESP32-C3-MINI-1","mfr":"Espressif Systems","cat":"rf","pkg":"SMD-53","life":"Attivo","rohs":1,"moq":1,"lead":"5 settimane",
+ "desc":"Modulo compatto RISC-V con Wi-Fi e Bluetooth 5 LE e 4 MB di flash",
+ "sp":{"Interfacce radio":"Wi-Fi 2,4 GHz + Bluetooth 5 LE","Core":"RISC-V a 32 bit, 160 MHz","Memoria flash":"4 MB","SRAM":"400 KB","Antenna":"stampata su PCB","Tensione di alimentazione":"3,0 – 3,6 V","Corrente di picco":"350 mA","Potenza di trasmissione":"+21 dBm","Sensibilità in ricezione":"−98 dBm","Certificazioni":"CE, FCC","Temperatura di esercizio":"−40 – 85 °C","GPIO disponibili":"16"},
+ "of":[["DigiKey",2.24,18600,1],["Mouser",2.31,12400,1],["LCSC",1.94,42000,0],["Farnell",2.48,3100,1],["RS",2.74,420,1],["TME",2.28,2600,1]]},
+
+{"mpn":"NRF52840-QIAA","mfr":"Nordic Semiconductor","cat":"rf","pkg":"aQFN-73","life":"Attivo","rohs":1,"moq":1,"lead":"12 settimane",
+ "desc":"SoC Cortex-M4F con Bluetooth 5, Thread, Zigbee e USB 2.0 integrato",
+ "sp":{"Interfacce radio":"Bluetooth 5 / 802.15.4","Core":"ARM Cortex-M4F a 64 MHz","Memoria flash":"1 MB","SRAM":"256 KB","Tensione di alimentazione":"1,7 – 5,5 V","Potenza di trasmissione":"+8 dBm","Sensibilità in ricezione":"−95 dBm","USB":"2.0 full-speed","Crittografia":"ARM CryptoCell-310","Certificazioni":"CE, FCC","Temperatura di esercizio":"−40 – 85 °C","GPIO disponibili":"48"},
+ "of":[["DigiKey",6.18,4200,1],["Mouser",6.24,3100,1],["LCSC",5.84,1200,0],["Farnell",6.55,880,1],["RS",7.02,140,1],["TME",6.40,320,1]]},
+
+{"mpn":"RFM95W-868S2","mfr":"HopeRF","cat":"rf","pkg":"SMD-16","life":"Attivo","rohs":1,"moq":1,"lead":"7 settimane",
+ "desc":"Ricetrasmettitore LoRa a 868 MHz per collegamenti a lungo raggio e basso consumo",
+ "sp":{"Interfacce radio":"LoRa / FSK","Banda di frequenza":"868 MHz","Potenza di trasmissione":"+20 dBm","Sensibilità in ricezione":"−148 dBm","Portata tipica":"fino a 15 km in campo libero","Interfaccia":"SPI","Tensione di alimentazione":"1,8 – 3,7 V","Corrente in trasmissione":"120 mA","Corrente in sleep":"0,2 µA","Antenna":"esterna (connettore o pad)","Temperatura di esercizio":"−40 – 85 °C","Certificazioni":"CE"},
+ "of":[["DigiKey",7.94,2200,1],["Mouser",8.12,1600,1],["LCSC",6.40,5400,0],["Farnell",8.60,0,1],["RS",9.20,120,1],["TME",7.85,880,1]]},
+
+{"mpn":"SIM800L","mfr":"SIMCom","cat":"rf","pkg":"LCC-42","life":"NRND","rohs":1,"moq":1,"lead":"18 settimane",
+ "desc":"Modulo GSM/GPRS quad-band per telemetria e invio SMS su rete 2G",
+ "sp":{"Interfacce radio":"GSM / GPRS 2G","Banda di frequenza":"850/900/1800/1900 MHz","Classe GPRS":"classe 12","Interfaccia":"UART","Tensione di alimentazione":"3,4 – 4,4 V","Corrente di picco":"2 A","Corrente in sleep":"0,7 mA","Potenza di trasmissione":"+33 dBm (GSM 850/900)","Antenna":"esterna","Certificazioni":"CE","Temperatura di esercizio":"−40 – 85 °C","Stato di fornitura":"non consigliato per nuovi progetti"},
+ "of":[["DigiKey",8.90,0,1],["Mouser",9.12,0,1],["LCSC",5.40,2400,0],["Farnell",9.60,0,1],["RS",10.20,0,1],["TME",8.75,60,1]]},
+
+{"mpn":"NE555P","mfr":"Texas Instruments","cat":"analog","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Timer a singolo canale per la generazione di ritardi e oscillazioni",
+ "sp":{"Funzione":"Timer / oscillatore","Numero di canali":"1","Tensione di alimentazione":"4,5 – 16 V","Corrente di uscita":"200 mA","Frequenza massima":"100 kHz","Deriva termica":"50 ppm/°C","Corrente a riposo":"3 mA","Precisione del ritardo":"1 %","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"0 – 70 °C","Numero di pin":"8","Sostituto SMD":"NE555DR"},
+ "of":[["DigiKey",0.62,54000,1],["Mouser",0.58,38900,1],["LCSC",0.11,120000,0],["Farnell",0.71,6200,1],["RS",0.84,2100,1],["TME",0.49,15400,1]]},
+
+{"mpn":"LM358N","mfr":"Texas Instruments","cat":"analog","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Amplificatore operazionale doppio funzionante ad alimentazione singola",
+ "sp":{"Funzione":"Amplificatore operazionale generico","Numero di canali":"2","Tensione di alimentazione":"3 – 32 V","Prodotto guadagno-banda":"0,7 MHz","Slew rate":"0,3 V/µs","Tensione di offset":"2 mV tipici","Corrente di polarizzazione":"20 nA","Rumore di ingresso":"40 nV/√Hz","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"0 – 70 °C","Numero di pin":"8","Sostituto SMD":"LM358DR"},
+ "of":[["DigiKey",0.55,31000,1],["Mouser",0.51,22400,1],["LCSC",0.09,98000,0],["Farnell",0.64,5100,1],["RS",0.78,1600,1],["TME",0.44,12800,1]]},
+
+{"mpn":"LM324N","mfr":"Texas Instruments","cat":"analog","pkg":"PDIP-14","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Amplificatore operazionale quadruplo ad alimentazione singola per uso generico",
+ "sp":{"Funzione":"Amplificatore operazionale generico","Numero di canali":"4","Tensione di alimentazione":"3 – 32 V","Prodotto guadagno-banda":"1,2 MHz","Slew rate":"0,5 V/µs","Tensione di offset":"3 mV tipici","Corrente di polarizzazione":"20 nA","Rumore di ingresso":"35 nV/√Hz","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"0 – 70 °C","Numero di pin":"14","Sostituto SMD":"LM324DR"},
+ "of":[["DigiKey",0.68,42000,1],["Mouser",0.64,28000,1],["LCSC",0.12,180000,0],["Farnell",0.78,9400,1],["RS",0.94,2800,1],["TME",0.58,21000,1]]},
+
+{"mpn":"TL072CP","mfr":"Texas Instruments","cat":"analog","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Amplificatore operazionale doppio a ingresso JFET e basso rumore, tipico per audio",
+ "sp":{"Funzione":"Amplificatore operazionale audio","Numero di canali":"2","Tensione di alimentazione":"±3 – ±18 V","Prodotto guadagno-banda":"3 MHz","Slew rate":"13 V/µs","Tensione di offset":"3 mV tipici","Corrente di polarizzazione":"30 pA","Rumore di ingresso":"18 nV/√Hz","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"0 – 70 °C","Numero di pin":"8","Sostituto SMD":"TL072CD"},
+ "of":[["DigiKey",0.88,18600,1],["Mouser",0.84,14200,1],["LCSC",0.24,52000,0],["Farnell",0.96,3400,1],["RS",1.14,760,1],["TME",0.79,6100,1]]},
+
+{"mpn":"MCP6002-I/P","mfr":"Microchip Technology","cat":"analog","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"10 settimane",
+ "desc":"Amplificatore operazionale doppio rail-to-rail a bassissimo consumo",
+ "sp":{"Funzione":"Amplificatore operazionale rail-to-rail","Numero di canali":"2","Tensione di alimentazione":"1,8 – 6,0 V","Prodotto guadagno-banda":"1 MHz","Slew rate":"0,6 V/µs","Tensione di offset":"4,5 mV massimi","Corrente di polarizzazione":"1 pA","Corrente per canale":"100 µA","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−40 – 85 °C","Numero di pin":"8","Sostituto SMD":"MCP6002-I/SN"},
+ "of":[["DigiKey",0.52,24000,1],["Mouser",0.49,16800,1],["LCSC",0.41,4200,0],["Farnell",0.58,3600,1],["RS",0.71,540,1],["TME",0.53,2900,1]]},
+
+{"mpn":"LM339N","mfr":"Texas Instruments","cat":"analog","pkg":"PDIP-14","life":"Attivo","rohs":1,"moq":1,"lead":"7 settimane",
+ "desc":"Comparatore quadruplo a uscita open collector per alimentazione singola",
+ "sp":{"Funzione":"Comparatore di tensione","Numero di canali":"4","Tensione di alimentazione":"2 – 36 V","Tempo di risposta":"1,3 µs","Tipo di uscita":"Open collector","Tensione di offset":"2 mV tipici","Corrente di polarizzazione":"25 nA","Corrente a riposo":"0,8 mA","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"0 – 70 °C","Numero di pin":"14","Sostituto SMD":"LM339DR"},
+ "of":[["DigiKey",0.61,29000,1],["Mouser",0.57,19400,1],["LCSC",0.10,140000,0],["Farnell",0.70,6800,1],["RS",0.86,1400,1],["TME",0.52,11200,1]]},
+
+{"mpn":"AD620ANZ","mfr":"Analog Devices","cat":"analog","pkg":"PDIP-8","life":"Attivo","rohs":1,"moq":1,"lead":"14 settimane",
+ "desc":"Amplificatore da strumentazione a basso consumo con guadagno impostabile da una sola resistenza",
+ "sp":{"Funzione":"Amplificatore da strumentazione","Numero di canali":"1","Intervallo di guadagno":"1 – 10.000","Reiezione di modo comune":"100 dB minimi","Tensione di alimentazione":"±2,3 – ±18 V","Corrente assorbita":"1,3 mA massimi","Tensione di offset":"50 µV massimi","Rumore di ingresso":"9 nV/√Hz","Larghezza di banda":"120 kHz a G=100","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−40 – 85 °C","Numero di pin":"8"},
+ "of":[["DigiKey",9.42,1240,1],["Mouser",9.58,880,1],["LCSC",8.90,0,0],["Farnell",10.10,210,1],["RS",11.05,44,1],["TME",9.80,130,1]]},
+
+{"mpn":"INA219AIDR","mfr":"Texas Instruments","cat":"analog","pkg":"SOIC-8","life":"Attivo","rohs":1,"moq":1,"lead":"11 settimane",
+ "desc":"Monitor di corrente e potenza bidirezionale con interfaccia I²C e ADC a 12 bit",
+ "sp":{"Funzione":"Monitor di corrente e potenza","Numero di canali":"1","Tensione di alimentazione":"3,0 – 5,5 V","Tensione di modo comune":"0 – 26 V","Risoluzione ADC":"12 bit","Interfaccia":"I²C fino a 2,56 MHz","Indirizzi disponibili":"16","Errore di guadagno":"0,5 % massimo","Corrente assorbita":"1 mA","Tipo di montaggio":"SMD","Temperatura di esercizio":"−40 – 125 °C","Numero di pin":"8"},
+ "of":[["DigiKey",2.84,9600,1],["Mouser",2.91,6400,1],["LCSC",2.10,18000,0],["Farnell",3.12,1800,1],["RS",3.48,260,1],["TME",2.88,1100,1]]},
+
+{"mpn":"IRF540N","mfr":"Infineon Technologies","cat":"disc","pkg":"TO-220AB","life":"Attivo","rohs":1,"moq":1,"lead":"9 settimane",
+ "desc":"MOSFET a canale N da 100 V e 33 A per commutazione di potenza",
+ "sp":{"Tipo di dispositivo":"MOSFET canale N","Tensione V(DS)":"100 V","Corrente I(D)":"33 A","Resistenza R(DS on)":"44 mΩ","Soglia V(GS)":"2 – 4 V","Potenza dissipabile":"130 W","Carica di gate":"71 nC","Capacità di ingresso":"1960 pF","Tempo di salita":"35 ns","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−55 – 175 °C","Resistenza termica":"1,15 °C/W"},
+ "of":[["DigiKey",1.18,9800,1],["Mouser",1.24,7400,1],["LCSC",0.74,26000,0],["Farnell",1.39,0,1],["RS",1.52,340,1],["TME",1.09,4100,1]]},
+
+{"mpn":"IRLZ44N","mfr":"Infineon Technologies","cat":"disc","pkg":"TO-220AB","life":"Attivo","rohs":1,"moq":1,"lead":"9 settimane",
+ "desc":"MOSFET a canale N logic-level, pilotabile direttamente da un microcontrollore a 5 V",
+ "sp":{"Tipo di dispositivo":"MOSFET canale N logic-level","Tensione V(DS)":"55 V","Corrente I(D)":"47 A","Resistenza R(DS on)":"22 mΩ","Soglia V(GS)":"1 – 2 V","Potenza dissipabile":"110 W","Carica di gate":"48 nC","Capacità di ingresso":"1750 pF","Tempo di salita":"60 ns","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−55 – 175 °C","Resistenza termica":"1,4 °C/W"},
+ "of":[["DigiKey",1.44,6200,1],["Mouser",1.49,4800,1],["LCSC",0.92,19000,0],["Farnell",1.62,1100,1],["RS",1.78,260,1],["TME",1.36,2900,1]]},
+
+{"mpn":"IRF3205PBF","mfr":"Infineon Technologies","cat":"disc","pkg":"TO-220AB","life":"Attivo","rohs":1,"moq":1,"lead":"11 settimane",
+ "desc":"MOSFET a canale N da 55 V e 110 A con resistenza di conduzione molto bassa",
+ "sp":{"Tipo di dispositivo":"MOSFET canale N","Tensione V(DS)":"55 V","Corrente I(D)":"110 A","Resistenza R(DS on)":"8 mΩ","Soglia V(GS)":"2 – 4 V","Potenza dissipabile":"200 W","Carica di gate":"146 nC","Capacità di ingresso":"3247 pF","Tempo di salita":"101 ns","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−55 – 175 °C","Resistenza termica":"0,75 °C/W"},
+ "of":[["DigiKey",2.26,7400,1],["Mouser",2.34,5100,1],["LCSC",1.48,21000,0],["Farnell",2.52,900,1],["RS",2.86,180,1],["TME",2.18,3200,1]]},
+
+{"mpn":"BC547B","mfr":"onsemi","cat":"disc","pkg":"TO-92","life":"Attivo","rohs":1,"moq":1,"lead":"5 settimane",
+ "desc":"Transistor bipolare NPN per piccoli segnali, 45 V e 100 mA",
+ "sp":{"Tipo di dispositivo":"Transistor bipolare NPN","Tensione V(CEO)":"45 V","Corrente I(C)":"100 mA","Guadagno h(FE)":"200 – 450","Frequenza di transizione":"300 MHz","Potenza dissipabile":"500 mW","Tensione di saturazione":"0,25 V","Cifra di rumore":"2 dB tipici","Corrente di dispersione":"15 nA","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−65 – 150 °C","Numero di pin":"3"},
+ "of":[["DigiKey",0.16,142000,1],["Mouser",0.14,98000,1],["LCSC",0.02,410000,0],["Farnell",0.19,24000,1],["RS",0.24,8400,1],["TME",0.11,52000,1]]},
+
+{"mpn":"2N3904","mfr":"onsemi","cat":"disc","pkg":"TO-92","life":"Attivo","rohs":1,"moq":1,"lead":"5 settimane",
+ "desc":"Transistor bipolare NPN per commutazione e amplificazione di piccoli segnali",
+ "sp":{"Tipo di dispositivo":"Transistor bipolare NPN","Tensione V(CEO)":"40 V","Corrente I(C)":"200 mA","Guadagno h(FE)":"100 – 300","Frequenza di transizione":"300 MHz","Potenza dissipabile":"625 mW","Tensione di saturazione":"0,2 V","Cifra di rumore":"5 dB massimi","Corrente di dispersione":"50 nA","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−55 – 150 °C","Numero di pin":"3"},
+ "of":[["DigiKey",0.14,168000,1],["Mouser",0.12,124000,1],["LCSC",0.02,520000,0],["Farnell",0.17,31000,1],["RS",0.22,9600,1],["TME",0.10,68000,1]]},
+
+{"mpn":"TIP120","mfr":"onsemi","cat":"disc","pkg":"TO-220AB","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Transistor Darlington NPN da 60 V e 5 A per pilotaggio di carichi induttivi",
+ "sp":{"Tipo di dispositivo":"Darlington NPN","Tensione V(CEO)":"60 V","Corrente I(C)":"5 A","Guadagno h(FE)":"1000 minimo","Frequenza di transizione":"7 MHz","Potenza dissipabile":"65 W","Tensione di saturazione":"2 V","Diodo di ricircolo":"integrato","Corrente di picco":"8 A","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−65 – 150 °C","Numero di pin":"3"},
+ "of":[["DigiKey",0.98,12600,1],["Mouser",0.94,8400,1],["LCSC",0.32,34000,0],["Farnell",1.12,2200,1],["RS",1.34,410,1],["TME",0.88,5600,1]]},
+
+{"mpn":"1N4148","mfr":"onsemi","cat":"disc","pkg":"DO-35","life":"Attivo","rohs":1,"moq":1,"lead":"4 settimane",
+ "desc":"Diodo di commutazione ad alta velocità, standard di settore per uso generico",
+ "sp":{"Tipo di dispositivo":"Diodo di commutazione","Tensione inversa":"100 V","Corrente diretta":"200 mA","Caduta diretta":"1 V a 10 mA","Tempo di recupero inverso":"4 ns","Corrente di picco ripetitiva":"2 A","Capacità di giunzione":"4 pF","Corrente inversa":"25 nA","Potenza dissipabile":"500 mW","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−65 – 175 °C","Sostituto SMD":"1N4148W"},
+ "of":[["DigiKey",0.10,240000,1],["Mouser",0.09,180000,1],["LCSC",0.01,900000,0],["Farnell",0.12,41000,1],["RS",0.16,9200,1],["TME",0.07,64000,1]]},
+
+{"mpn":"1N5819","mfr":"onsemi","cat":"disc","pkg":"DO-41","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Diodo Schottky da 40 V e 1 A a bassa caduta diretta, per raddrizzamento e protezione",
+ "sp":{"Tipo di dispositivo":"Diodo Schottky","Tensione inversa":"40 V","Corrente diretta":"1 A","Caduta diretta":"0,45 V a 1 A","Tempo di recupero inverso":"trascurabile","Corrente di picco ripetitiva":"25 A","Capacità di giunzione":"110 pF","Corrente inversa":"1 mA","Potenza dissipabile":"875 mW","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−65 – 125 °C","Sostituto SMD":"SS14"},
+ "of":[["DigiKey",0.21,88000,1],["Mouser",0.19,64000,1],["LCSC",0.03,320000,0],["Farnell",0.24,14000,1],["RS",0.31,2600,1],["TME",0.16,28000,1]]},
+
+{"mpn":"MBR20100CT","mfr":"onsemi","cat":"disc","pkg":"TO-220AB","life":"Attivo","rohs":1,"moq":1,"lead":"10 settimane",
+ "desc":"Doppio diodo Schottky a catodo comune da 100 V e 20 A per alimentatori switching",
+ "sp":{"Tipo di dispositivo":"Diodo Schottky doppio","Tensione inversa":"100 V","Corrente diretta":"20 A (10 A per diodo)","Caduta diretta":"0,85 V a 10 A","Configurazione":"Catodo comune","Corrente di picco ripetitiva":"150 A","Capacità di giunzione":"400 pF","Corrente inversa":"0,5 mA","Potenza dissipabile":"tramite dissipatore","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"−65 – 150 °C","Numero di pin":"3"},
+ "of":[["DigiKey",1.42,9200,1],["Mouser",1.38,6100,1],["LCSC",0.54,24000,0],["Farnell",1.58,0,1],["RS",1.84,180,1],["TME",1.32,3400,1]]},
+
+{"mpn":"LM7805CT","mfr":"onsemi","cat":"pwr","pkg":"TO-220","life":"Attivo","rohs":1,"moq":1,"lead":"7 settimane",
+ "desc":"Regolatore lineare a tensione fissa 5 V con protezione termica e da cortocircuito",
+ "sp":{"Topologia":"Lineare a tensione fissa","Tensione di uscita":"5 V","Corrente di uscita":"1 A","Tensione di ingresso massima":"35 V","Caduta di dropout":"2 V","Precisione dell'uscita":"±4 %","Regolazione di linea":"50 mV","Regolazione di carico":"100 mV","Reiezione di ripple":"68 dB","Protezioni":"termica e da cortocircuito","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"0 – 125 °C"},
+ "of":[["DigiKey",0.74,42000,1],["Mouser",0.71,31000,1],["LCSC",0.18,110000,0],["Farnell",0.86,7800,1],["RS",1.02,1900,1],["TME",0.64,16000,1]]},
+
+{"mpn":"LM317T","mfr":"Texas Instruments","cat":"pwr","pkg":"TO-220","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Regolatore lineare regolabile da 1,25 a 37 V con corrente di uscita fino a 1,5 A",
+ "sp":{"Topologia":"Lineare regolabile","Tensione di uscita":"1,25 – 37 V","Corrente di uscita":"1,5 A","Tensione di ingresso massima":"40 V","Caduta di dropout":"2 V","Precisione dell'uscita":"±1 %","Regolazione di linea":"0,01 %/V","Regolazione di carico":"0,1 %","Reiezione di ripple":"65 dB","Protezioni":"termica, cortocircuito, SOA","Tipo di montaggio":"Foro passante","Temperatura di giunzione":"0 – 125 °C"},
+ "of":[["DigiKey",0.82,38000,1],["Mouser",0.79,26000,1],["LCSC",0.16,140000,0],["Farnell",0.94,6400,1],["RS",1.12,1400,1],["TME",0.72,14000,1]]},
+
+{"mpn":"AMS1117-3.3","mfr":"Advanced Monolithic Systems","cat":"pwr","pkg":"SOT-223","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Regolatore LDO a 3,3 V e 1 A in contenitore SMD, molto diffuso su schede di sviluppo",
+ "sp":{"Topologia":"LDO lineare","Tensione di uscita":"3,3 V","Corrente di uscita":"1 A","Tensione di ingresso massima":"15 V","Caduta di dropout":"1,3 V a 1 A","Precisione dell'uscita":"±1 %","Regolazione di linea":"0,2 %","Regolazione di carico":"0,4 %","Corrente a riposo":"5 mA","Protezioni":"termica e limite di corrente","Tipo di montaggio":"SMD","Temperatura di giunzione":"0 – 125 °C"},
+ "of":[["DigiKey",0.48,26000,1],["Mouser",0.46,18000,1],["LCSC",0.05,480000,0],["Farnell",0.55,4200,1],["RS",0.68,0,1],["TME",0.39,9400,1]]},
+
+{"mpn":"AP2112K-3.3TRG1","mfr":"Diodes Incorporated","cat":"pwr","pkg":"SOT-23-5","life":"Attivo","rohs":1,"moq":1,"lead":"9 settimane",
+ "desc":"Regolatore LDO a 3,3 V e 600 mA a bassa corrente di riposo con pin di abilitazione",
+ "sp":{"Topologia":"LDO lineare","Tensione di uscita":"3,3 V","Corrente di uscita":"600 mA","Tensione di ingresso massima":"6 V","Caduta di dropout":"250 mV a 600 mA","Precisione dell'uscita":"±1,5 %","Reiezione di ripple":"55 dB","Corrente a riposo":"55 µA","Corrente in shutdown":"0,01 µA","Protezioni":"termica, corrente, soft-start","Tipo di montaggio":"SMD","Temperatura di giunzione":"−40 – 125 °C"},
+ "of":[["DigiKey",0.44,64000,1],["Mouser",0.42,48000,1],["LCSC",0.19,180000,0],["Farnell",0.51,12000,1],["RS",0.64,1800,1],["TME",0.46,6400,1]]},
+
+{"mpn":"LM2596S-ADJ","mfr":"Texas Instruments","cat":"pwr","pkg":"TO-263-5","life":"Attivo","rohs":1,"moq":1,"lead":"13 settimane",
+ "desc":"Convertitore buck step-down da 3 A con uscita regolabile e frequenza di 150 kHz",
+ "sp":{"Topologia":"Buck (step-down)","Tensione di uscita":"1,2 – 37 V","Corrente di uscita":"3 A","Tensione di ingresso massima":"40 V","Frequenza di commutazione":"150 kHz","Rendimento tipico":"80 %","Precisione dell'uscita":"±4 %","Soft-start":"presente","Corrente in standby":"80 µA","Protezioni":"termica e limite di corrente","Tipo di montaggio":"SMD","Temperatura di giunzione":"−40 – 125 °C"},
+ "of":[["DigiKey",4.18,3400,1],["Mouser",4.24,2100,1],["LCSC",1.62,28000,0],["Farnell",4.56,0,1],["RS",4.92,180,1],["TME",4.30,640,1]]},
+
+{"mpn":"MP1584EN-LF-Z","mfr":"Monolithic Power Systems","cat":"pwr","pkg":"SOIC-8","life":"Attivo","rohs":1,"moq":1,"lead":"12 settimane",
+ "desc":"Convertitore buck sincrono da 3 A fino a 1,5 MHz per alimentazioni compatte",
+ "sp":{"Topologia":"Buck sincrono","Tensione di uscita":"0,8 – 22 V","Corrente di uscita":"3 A","Tensione di ingresso massima":"28 V","Frequenza di commutazione":"100 kHz – 1,5 MHz","Rendimento tipico":"92 %","Precisione dell'uscita":"±1,5 %","Soft-start":"programmabile","Corrente in shutdown":"3 µA","Protezioni":"termica, sovracorrente, sottotensione","Tipo di montaggio":"SMD","Temperatura di giunzione":"−40 – 125 °C"},
+ "of":[["DigiKey",1.86,14000,1],["Mouser",1.92,9600,1],["LCSC",0.62,86000,0],["Farnell",2.08,2400,1],["RS",2.34,0,1],["TME",1.88,3100,1]]},
+
+{"mpn":"RC0805FR-0710KL","mfr":"YAGEO","cat":"pass","pkg":"0805","life":"Attivo","rohs":1,"moq":1,"lead":"4 settimane",
+ "desc":"Resistore SMD a film spesso da 10 kΩ con tolleranza dell'1 %",
+ "sp":{"Tipo di componente":"Resistore a film spesso","Valore nominale":"10 kΩ","Tolleranza":"±1 %","Potenza nominale":"125 mW","Coefficiente termico":"±100 ppm/°C","Tensione di lavoro":"150 V","Formato":"0805 (2012 metrico)","Terminazione":"Stagno su nichel","Coefficiente di tensione":"5 ppm/V","Tipo di montaggio":"SMD","Temperatura di esercizio":"−55 – 155 °C","Confezione":"bobina da 5000"},
+ "of":[["DigiKey",0.021,410000,1],["Mouser",0.019,298000,1],["LCSC",0.004,1200000,0],["Farnell",0.026,88000,1],["RS",0.034,24000,1],["TME",0.016,140000,1]]},
+
+{"mpn":"RC0603FR-07100RL","mfr":"YAGEO","cat":"pass","pkg":"0603","life":"Attivo","rohs":1,"moq":1,"lead":"4 settimane",
+ "desc":"Resistore SMD a film spesso da 100 Ω, 1 %, formato 0603",
+ "sp":{"Tipo di componente":"Resistore a film spesso","Valore nominale":"100 Ω","Tolleranza":"±1 %","Potenza nominale":"100 mW","Coefficiente termico":"±100 ppm/°C","Tensione di lavoro":"75 V","Formato":"0603 (1608 metrico)","Terminazione":"Stagno su nichel","Coefficiente di tensione":"5 ppm/V","Tipo di montaggio":"SMD","Temperatura di esercizio":"−55 – 155 °C","Confezione":"bobina da 5000"},
+ "of":[["DigiKey",0.018,680000,1],["Mouser",0.016,420000,1],["LCSC",0.003,2400000,0],["Farnell",0.022,140000,1],["RS",0.029,42000,1],["TME",0.014,260000,1]]},
+
+{"mpn":"CC0805KRX7R9BB104","mfr":"YAGEO","cat":"pass","pkg":"0805","life":"Attivo","rohs":1,"moq":1,"lead":"5 settimane",
+ "desc":"Condensatore ceramico multistrato da 100 nF, 50 V, dielettrico X7R",
+ "sp":{"Tipo di componente":"Condensatore ceramico (MLCC)","Capacità nominale":"100 nF","Tolleranza":"±10 %","Tensione nominale":"50 V","Dielettrico":"X7R","Deriva di capacità":"±15 % sul campo termico","Formato":"0805 (2012 metrico)","Terminazione":"Stagno su nichel","Fattore di dissipazione":"2,5 %","Tipo di montaggio":"SMD","Temperatura di esercizio":"−55 – 125 °C","Confezione":"bobina da 4000"},
+ "of":[["DigiKey",0.032,620000,1],["Mouser",0.029,410000,1],["LCSC",0.005,2100000,0],["Farnell",0.038,96000,1],["RS",0.048,18000,1],["TME",0.024,220000,1]]},
+
+{"mpn":"CL21A106KOQNNNE","mfr":"Samsung Electro-Mechanics","cat":"pass","pkg":"0805","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Condensatore ceramico da 10 µF, 16 V, X5R, per disaccoppiamento di alimentazioni",
+ "sp":{"Tipo di componente":"Condensatore ceramico (MLCC)","Capacità nominale":"10 µF","Tolleranza":"±10 %","Tensione nominale":"16 V","Dielettrico":"X5R","Deriva di capacità":"±15 % sul campo termico","Formato":"0805 (2012 metrico)","Terminazione":"Stagno su nichel","Fattore di dissipazione":"10 %","Tipo di montaggio":"SMD","Temperatura di esercizio":"−55 – 85 °C","Confezione":"bobina da 3000"},
+ "of":[["DigiKey",0.084,180000,1],["Mouser",0.079,124000,1],["LCSC",0.012,860000,0],["Farnell",0.096,0,1],["RS",0.118,6200,1],["TME",0.068,48000,1]]},
+
+{"mpn":"UVR1H101MED","mfr":"Nichicon","cat":"pass","pkg":"Radiale 8×11,5","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Condensatore elettrolitico in alluminio da 100 µF e 50 V, 105 °C, montaggio radiale",
+ "sp":{"Tipo di componente":"Elettrolitico in alluminio","Capacità nominale":"100 µF","Tolleranza":"±20 %","Tensione nominale":"50 V","Resistenza serie (ESR)":"0,6 Ω a 100 kHz","Corrente di ripple":"210 mA a 100 kHz","Vita utile":"2.000 h a 105 °C","Dimensioni":"8 × 11,5 mm","Corrente di dispersione":"0,01 CV","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−40 – 105 °C","Passo dei terminali":"3,5 mm"},
+ "of":[["DigiKey",0.26,42000,1],["Mouser",0.24,28000,1],["LCSC",0.06,160000,0],["Farnell",0.31,5400,1],["RS",0.39,1200,1],["TME",0.21,18000,1]]},
+
+{"mpn":"744314220","mfr":"Würth Elektronik","cat":"pass","pkg":"WE-PD 7345","life":"Attivo","rohs":1,"moq":1,"lead":"10 settimane",
+ "desc":"Induttore di potenza schermato da 22 µH e 4 A per convertitori switching",
+ "sp":{"Tipo di componente":"Induttore di potenza schermato","Induttanza nominale":"22 µH","Tolleranza":"±20 %","Corrente di saturazione":"4,0 A","Corrente nominale":"3,5 A","Resistenza in continua":"41 mΩ","Frequenza di autorisonanza":"18 MHz","Schermatura":"schermato magneticamente","Dimensioni":"7,3 × 7,3 × 4,5 mm","Tipo di montaggio":"SMD","Temperatura di esercizio":"−40 – 125 °C","Confezione":"bobina da 800"},
+ "of":[["DigiKey",0.94,18000,1],["Mouser",0.91,12400,1],["LCSC",0.38,26000,0],["Farnell",1.08,3200,1],["RS",1.26,480,1],["TME",0.96,2100,1]]},
+
+{"mpn":"DHT22","mfr":"Aosong Electronics","cat":"sens","pkg":"Modulo 4 pin","life":"Attivo","rohs":1,"moq":1,"lead":"6 settimane",
+ "desc":"Sensore digitale combinato di temperatura e umidità con uscita a filo singolo",
+ "sp":{"Grandezze misurate":"Temperatura e umidità relativa","Campo di temperatura":"−40 – 80 °C","Precisione temperatura":"±0,5 °C","Campo di umidità":"0 – 100 % UR","Precisione umidità":"±2 % UR","Interfaccia":"1-Wire proprietaria","Tensione di alimentazione":"3,3 – 6 V","Corrente in misura":"1,5 mA","Frequenza di campionamento":"0,5 Hz","Risoluzione":"0,1 °C / 0,1 % UR","Tipo di montaggio":"Foro passante","Tempo di risposta":"2 s"},
+ "of":[["DigiKey",8.42,4200,1],["Mouser",8.60,2800,1],["LCSC",3.10,18000,0],["Farnell",9.10,900,1],["RS",9.80,140,1],["TME",8.20,1600,1]]},
+
+{"mpn":"BME280","mfr":"Bosch Sensortec","cat":"sens","pkg":"LGA-8","life":"Attivo","rohs":1,"moq":1,"lead":"11 settimane",
+ "desc":"Sensore combinato di pressione, temperatura e umidità con interfaccia I²C e SPI",
+ "sp":{"Grandezze misurate":"Pressione, temperatura, umidità","Campo di pressione":"300 – 1100 hPa","Precisione pressione":"±1 hPa","Campo di temperatura":"−40 – 85 °C","Precisione temperatura":"±1 °C","Campo di umidità":"0 – 100 % UR","Interfaccia":"I²C e SPI","Tensione di alimentazione":"1,71 – 3,6 V","Corrente in misura":"3,6 µA a 1 Hz","Risoluzione":"0,18 Pa","Tipo di montaggio":"SMD","Dimensioni":"2,5 × 2,5 × 0,93 mm"},
+ "of":[["DigiKey",7.84,6400,1],["Mouser",7.96,4200,1],["LCSC",4.60,12000,0],["Farnell",8.40,1100,1],["RS",9.10,180,1],["TME",7.90,880,1]]},
+
+{"mpn":"DS18B20","mfr":"Analog Devices","cat":"sens","pkg":"TO-92","life":"Attivo","rohs":1,"moq":1,"lead":"14 settimane",
+ "desc":"Sensore di temperatura digitale a bus 1-Wire con indirizzo univoco di fabbrica",
+ "sp":{"Grandezze misurate":"Temperatura","Campo di temperatura":"−55 – 125 °C","Precisione temperatura":"±0,5 °C tra −10 e 85 °C","Interfaccia":"1-Wire","Risoluzione":"9 – 12 bit configurabile","Tensione di alimentazione":"3,0 – 5,5 V","Corrente in misura":"1 mA","Corrente in standby":"750 nA","Tempo di conversione":"750 ms a 12 bit","Alimentazione parassita":"supportata","Tipo di montaggio":"Foro passante","Indirizzo":"seriale univoco a 64 bit"},
+ "of":[["DigiKey",4.94,9800,1],["Mouser",5.06,6400,1],["LCSC",2.80,24000,0],["Farnell",5.38,0,1],["RS",5.90,240,1],["TME",4.86,2200,1]]},
+
+{"mpn":"MPU-6050","mfr":"TDK InvenSense","cat":"sens","pkg":"QFN-24","life":"NRND","rohs":1,"moq":1,"lead":"16 settimane",
+ "desc":"Unità inerziale a 6 assi con accelerometro, giroscopio e processore di movimento integrato",
+ "sp":{"Grandezze misurate":"Accelerazione e velocità angolare","Assi":"3 accelerometro + 3 giroscopio","Fondo scala accelerometro":"±2/4/8/16 g","Fondo scala giroscopio":"±250/500/1000/2000 °/s","Risoluzione ADC":"16 bit","Interfaccia":"I²C fino a 400 kHz","Tensione di alimentazione":"2,375 – 3,46 V","Corrente in misura":"3,9 mA","Frequenza di campionamento":"fino a 8 kHz","Tipo di montaggio":"SMD","Temperatura di esercizio":"−40 – 85 °C","Stato di fornitura":"non consigliato per nuovi progetti"},
+ "of":[["DigiKey",6.28,0,1],["Mouser",6.42,1400,1],["LCSC",1.98,34000,0],["Farnell",6.90,0,1],["RS",7.40,0,1],["TME",6.20,320,1]]},
+
+{"mpn":"HC-SR04","mfr":"Generico","cat":"sens","pkg":"Modulo 4 pin","life":"Attivo","rohs":1,"moq":1,"lead":"3 settimane",
+ "desc":"Sensore di distanza a ultrasuoni con portata da 2 cm a 4 metri",
+ "sp":{"Grandezze misurate":"Distanza","Campo di misura":"2 cm – 400 cm","Precisione":"±3 mm","Frequenza operativa":"40 kHz","Angolo di misura":"15°","Interfaccia":"Trigger/Echo digitale","Tensione di alimentazione":"5 V","Corrente in misura":"15 mA","Frequenza di campionamento":"fino a 20 Hz","Tipo di montaggio":"Foro passante","Dimensioni":"45 × 20 × 15 mm","Temperatura di esercizio":"−15 – 70 °C"},
+ "of":[["DigiKey",4.20,0,1],["Mouser",4.34,880,1],["LCSC",0.94,42000,0],["Farnell",4.60,0,1],["RS",5.10,0,1],["TME",3.98,1400,1]]},
+
+{"mpn":"WS2812B","mfr":"Worldsemi","cat":"opto","pkg":"PLCC-4 5050","life":"Attivo","rohs":1,"moq":1,"lead":"5 settimane",
+ "desc":"LED RGB indirizzabile con controller integrato e protocollo a filo singolo",
+ "sp":{"Tipo di componente":"LED RGB indirizzabile","Colori":"Rosso, verde, blu","Profondità di colore":"8 bit per canale","Interfaccia":"Dato seriale a filo singolo, 800 kHz","Tensione di alimentazione":"3,5 – 5,3 V","Corrente per LED":"60 mA a piena luminosità","Angolo di emissione":"120°","Intensità luminosa":"550 – 700 mcd (bianco)","Frequenza di refresh":"400 Hz","Tipo di montaggio":"SMD","Dimensioni":"5 × 5 × 1,6 mm","Temperatura di esercizio":"−25 – 80 °C"},
+ "of":[["DigiKey",0.42,86000,1],["Mouser",0.44,52000,1],["LCSC",0.08,620000,0],["Farnell",0.49,12000,1],["RS",0.58,0,1],["TME",0.40,24000,1]]},
+
+{"mpn":"PC817X1NSZ9F","mfr":"Sharp Microelectronics","cat":"opto","pkg":"DIP-4","life":"Attivo","rohs":1,"moq":1,"lead":"9 settimane",
+ "desc":"Fotoaccoppiatore a singolo canale con uscita a transistor per isolamento galvanico",
+ "sp":{"Tipo di componente":"Fotoaccoppiatore a transistor","Numero di canali":"1","Rapporto di trasferimento":"50 – 600 %","Tensione di isolamento":"5.000 V eff.","Tensione collettore-emettitore":"80 V","Corrente diretta del LED":"50 mA","Corrente di uscita":"50 mA","Tempo di risposta":"18 µs","Capacità di isolamento":"0,8 pF","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−30 – 100 °C","Numero di pin":"4"},
+ "of":[["DigiKey",0.48,64000,1],["Mouser",0.46,42000,1],["LCSC",0.09,280000,0],["Farnell",0.56,9800,1],["RS",0.68,2100,1],["TME",0.42,18000,1]]},
+
+{"mpn":"LTST-C170KRKT","mfr":"Lite-On","cat":"opto","pkg":"0805","life":"Attivo","rohs":1,"moq":1,"lead":"7 settimane",
+ "desc":"LED rosso SMD in formato 0805 ad alta efficienza per indicazione di stato",
+ "sp":{"Tipo di componente":"LED indicatore","Colore":"Rosso","Lunghezza d'onda dominante":"631 nm","Intensità luminosa":"180 mcd a 20 mA","Angolo di emissione":"130°","Tensione diretta":"2,0 V tipica","Corrente diretta":"20 mA","Corrente di picco":"100 mA","Tensione inversa":"5 V","Tipo di montaggio":"SMD","Temperatura di esercizio":"−40 – 85 °C","Confezione":"bobina da 3000"},
+ "of":[["DigiKey",0.14,240000,1],["Mouser",0.13,164000,1],["LCSC",0.02,880000,0],["Farnell",0.17,38000,1],["RS",0.22,8600,1],["TME",0.12,62000,1]]},
+
+{"mpn":"G5LE-14-DC5","mfr":"Omron Electronics","cat":"emech","pkg":"THT relè","life":"Attivo","rohs":1,"moq":1,"lead":"12 settimane",
+ "desc":"Relè di potenza SPDT da 10 A con bobina a 5 V DC, per montaggio su circuito stampato",
+ "sp":{"Configurazione contatti":"SPDT (1 scambio)","Portata dei contatti":"10 A a 250 V AC","Tensione di bobina":"5 V DC","Resistenza di bobina":"55 Ω","Potenza di bobina":"450 mW","Vita elettrica":"100.000 cicli","Vita meccanica":"10.000.000 cicli","Tempo di eccitazione":"10 ms","Tempo di diseccitazione":"5 ms","Rigidità dielettrica":"5.000 V","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−40 – 85 °C"},
+ "of":[["DigiKey",2.14,8600,1],["Mouser",2.09,6200,1],["LCSC",1.12,24000,0],["Farnell",2.38,1400,1],["RS",2.64,420,1],["TME",1.96,3100,1]]},
+
+{"mpn":"61300411121","mfr":"Würth Elektronik","cat":"emech","pkg":"THT header","life":"Attivo","rohs":1,"moq":1,"lead":"8 settimane",
+ "desc":"Header a pin diritto da 4 vie con passo 2,54 mm e contatti dorati",
+ "sp":{"Numero di vie":"4","Passo":"2,54 mm","Corrente nominale":"3 A","Tensione nominale":"250 V","Placcatura dei contatti":"Oro su nichel","Materiale isolante":"PA66 UL94 V-0","Resistenza di contatto":"20 mΩ","Cicli di inserzione":"30","Orientamento":"Diritto","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−40 – 105 °C","Altezza dei pin":"11,5 mm"},
+ "of":[["DigiKey",0.34,62000,1],["Mouser",0.31,44000,1],["LCSC",0.04,280000,0],["Farnell",0.39,9800,1],["RS",0.48,2400,1],["TME",0.28,21000,1]]},
+
+{"mpn":"SS-5GL","mfr":"Omron Electronics","cat":"emech","pkg":"THT microswitch","life":"Attivo","rohs":1,"moq":1,"lead":"10 settimane",
+ "desc":"Microinterruttore a leva con contatti SPDT da 5 A per finecorsa",
+ "sp":{"Configurazione contatti":"SPDT (1 scambio)","Portata dei contatti":"5 A a 250 V AC","Forza di azionamento":"0,49 N massima","Corsa di scatto":"0,6 mm","Tipo di attuatore":"Leva a molla","Vita elettrica":"30.000 cicli","Vita meccanica":"1.000.000 cicli","Resistenza di contatto":"30 mΩ","Rigidità dielettrica":"1.000 V","Tipo di montaggio":"Foro passante","Temperatura di esercizio":"−25 – 85 °C","Terminali":"Faston 4,8 mm"},
+ "of":[["DigiKey",1.68,14000,1],["Mouser",1.62,9200,1],["LCSC",0.86,18000,0],["Farnell",1.86,2600,1],["RS",2.12,640,1],["TME",1.54,4200,1]]},
+
+{"mpn":"TL3301AF160QG","mfr":"E-Switch","cat":"emech","pkg":"SMD tact","life":"Attivo","rohs":1,"moq":1,"lead":"11 settimane",
+ "desc":"Pulsante tattile SMD da 6 × 3,5 mm con forza di azionamento di 160 gf",
+ "sp":{"Configurazione contatti":"SPST normalmente aperto","Portata dei contatti":"50 mA a 12 V DC","Forza di azionamento":"1,6 N (160 gf)","Corsa di scatto":"0,25 mm","Tipo di attuatore":"Pulsante","Vita meccanica":"200.000 cicli","Resistenza di contatto":"100 mΩ","Tempo di rimbalzo":"5 ms","Dimensioni":"6 × 3,5 × 2,5 mm","Tipo di montaggio":"SMD","Temperatura di esercizio":"−40 – 85 °C","Confezione":"bobina da 3000"},
+ "of":[["DigiKey",0.24,120000,1],["Mouser",0.22,84000,1],["LCSC",0.03,420000,0],["Farnell",0.28,18000,1],["RS",0.36,4200,1],["TME",0.21,32000,1]]}
+
+]}

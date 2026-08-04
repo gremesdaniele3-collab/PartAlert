@@ -2,7 +2,10 @@
 // Principio guida: conserviamo il minimo indispensabile.
 // Nessuna password, nessun profilo, nessun dato di pagamento.
 
-generator client { provider = "prisma-client-js" }
+generator client {
+  provider = "prisma-client-js"
+}
+
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")

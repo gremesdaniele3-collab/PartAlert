@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "postinstall": "prisma generate",
+    "postinstall": "prisma generate --no-engine",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate deploy"
   },
